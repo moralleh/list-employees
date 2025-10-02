@@ -14,9 +14,6 @@ public class Employee {
     public int getId() {
         return id;
     }
-    public void setId(int id) {
-        this.id = id;
-    }
     public String getName() {
         return name;
     }
@@ -29,12 +26,10 @@ public class Employee {
     public void setSalary(double salary) {
         this.salary = salary;
     }
-
     public void salaryIncrease(double rate){
         double newSalary = getSalary() * rate;
         setSalary(newSalary);
     }
-
     @Override
     public String toString() {
         return id + ", " + name + ", " + salary;
